@@ -50,7 +50,9 @@ a {
 .topnav a {
 	text-align: center;
 }
-
+header{
+	z-index: 100;
+}
 #image,
 #output {
 	transition: transform .2s ease-in-out;
@@ -134,7 +136,7 @@ a {
 #body {
 	width: 100%;
 	/* color: #fff; */
-   padding-left: 1.5rem;
+   padding-left: 1.5rem;   
 }
 
 #image,
@@ -368,4 +370,69 @@ li.nav-item a:hover{
 }
 li.nav-item a{
 	padding-left: 10px;
+}
+
+#img1{
+    width:300px;
+    transition:transform .2s ease-in-out;
+}
+    #img1:hover{transform:scale(1.2);cursor:zoom-in}
+    h3{
+    margin-left: 0 !important;
+    }
+
+
+
+
+#share{
+	position: absolute;
+	bottom: 5%;
+	right: 5%;
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+	background-color: black;
+	align-self: center;
+	padding-top: 15px;
+	padding-left: 10px;
+}
+.show_it{
+    list-style: none;
+    display: flex;
+    margin-bottom: 10px;
+
+  }
+  .show_it xmp{
+    margin-right: 20px;
+	
+
+  }
+  .show_it input{
+	width: 35%;
+	margin-right: 10px;
+  }
+  ::-webkit-scrollbar{
+	width: 18px;
+	
+  }
+  ::-webkit-scrollbar-thumb{
+	background: url(down-arrow.gif) no-repeat;
+	background-size: contain; /* or cover, depending on your image */
+    border: none;
+  }
+  ::-webkit-scrollbar-track{
+	background: #f1f1f1;
+  }
+#watermark{
+ position:fixed;
+ bottom:40%;
+ right:15%;
+ opacity:0.1;
+ font-size: 55px;
+ rotate: -45deg;
+ z-index:99;
+ color:rgb(112, 109, 109);
+ user-select: none;
+ pointer-events: none;
+
 }
